@@ -6,14 +6,13 @@ import java.net.URL;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
 public class BaseDriver {
 
-	static AndroidDriver<MobileElement> driver;
+	static AndroidDriver driver;
 	
-	public AndroidDriver<MobileElement> getDriver() {
+	public AndroidDriver getDriver() {
 		return driver;
 	}
 
@@ -33,7 +32,7 @@ public class BaseDriver {
 	}
 	
 	public void startDriver() {
-		driver = new AndroidDriver<MobileElement>(URL, capabilities);
+		driver = new AndroidDriver(URL, capabilities);
 	}
 	
 	public void getURL(String url) {
