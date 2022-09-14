@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-14T17:51:14 SGT" name="Suite" finished-at="2022-09-14T17:51:29 SGT" duration-ms="14961">
+    <groups>
+    </groups>
+    <test started-at="2022-09-14T17:51:14 SGT" name="Test" finished-at="2022-09-14T17:51:29 SGT" duration-ms="14961">
+      <class name="loginH5.OpenChrome">
+        <test-method is-config="true" signature="startRealMobileDevice(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:loginH5.OpenChrome@4c36250e]" started-at="2022-09-14T17:51:14 SGT" name="startRealMobileDevice" finished-at="2022-09-14T17:51:14 SGT" duration-ms="37" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vivo Y7s]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[DQSCRWA6JZY9UWNV]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[com.android.chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[com.google.android.apps.chrome.Main]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[UiAutomator1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startRealMobileDevice -->
+        <test-method signature="toClientSite(java.lang.String)[pri:0, instance:loginH5.OpenChrome@4c36250e]" started-at="2022-09-14T17:51:14 SGT" name="toClientSite" finished-at="2022-09-14T17:51:21 SGT" duration-ms="6599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://wltestmembersite.the777888.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toClientSite -->
+        <test-method signature="login()[pri:1, instance:loginH5.OpenChrome@4c36250e]" started-at="2022-09-14T17:51:21 SGT" name="login" finished-at="2022-09-14T17:51:25 SGT" duration-ms="4323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:loginH5.OpenChrome@4c36250e]" started-at="2022-09-14T17:51:25 SGT" name="endTest" finished-at="2022-09-14T17:51:29 SGT" duration-ms="3941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- loginH5.OpenChrome -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
