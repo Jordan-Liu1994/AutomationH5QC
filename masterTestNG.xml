@@ -7,13 +7,20 @@
 	<parameter name="udid" value="DQSCRWA6JZY9UWNV"></parameter>
 	<parameter name="appPackage" value="com.android.chrome"></parameter>
 	<parameter name="appActivity" value="com.google.android.apps.chrome.Main"></parameter>
-	<parameter name="automationName" value="UiAutomator1"></parameter>
+	<parameter name="automationName" value="UiAutomator2"></parameter>
+	<parameter name="pageLoadStrategy" value="normal"></parameter>
+	
+	<parameter name="platform" value="H5"></parameter>
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="javaVersion" value="17 JDK"></parameter>
+	<parameter name="automationAuthor" value="Jordan"></parameter>
 	
 	<parameter name="url" value="https://wltestmembersite.the777888.com"></parameter>
+	<parameter name="usernameFE" value="qctestergame001"></parameter>
 	
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="loginH5.OpenChrome"></class>
+			<class name="loginH5.LoginH5FE"></class>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

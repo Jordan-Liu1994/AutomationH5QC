@@ -9,11 +9,32 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">17,294</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,843</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">loginH5.OpenChrome</td><td><a href="#m0">login</a></td><td rowspan="1">1663149928341</td><td rowspan="1">6054</td></tr><tr class="passedeven"><td><a href="#m1">toClientSite</a></td><td rowspan="1">1663149921168</td><td rowspan="1">7167</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">loginH5.LoginH5FE</td><td><a href="#m0">login</a></td><td rowspan="1">1663230690671</td><td rowspan="1">18195</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">loginH5.LoginH5FE</td><td><a href="#m1">toClientSite</a></td><td rowspan="1">1663230679022</td><td rowspan="1">11636</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">loginH5.OpenChrome#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">loginH5.OpenChrome#toClientSite</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://wltestmembersite.the777888.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">loginH5.LoginH5FE#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>qctestergame001</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;CDWILT004&apos;, ip: &apos;192.168.88.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e5ffcf92-b999-4e5b-bfc1-bb106f0d551b, findElement {using=xpath, value=//android.widget.EditText[@resource-id=&apos;username&apos;]}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: UiAutomator2, deviceName: vivo Y7s, pageLoadStrategy: normal, platformName: android, platformVersion: 9, udid: DQSCRWA6JZY9UWNV}, appium:deviceApiLevel: 28, appium:deviceManufacturer: vivo, appium:deviceModel: V1913A, appium:deviceName: DQSCRWA6JZY9UWNV, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: DQSCRWA6JZY9UWNV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 9, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:udid: DQSCRWA6JZY9UWNV, appium:viewportRect: {height: 2057, left: 0, top: 84, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, pageLoadStrategy: normal, platformName: ANDROID}
+Session ID: e5ffcf92-b999-4e5b-bfc1-bb106f0d551b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at fuctionsH5FE.LoginFE.loginUsername(LoginFE.java:31)
+	at loginH5.LoginH5FE.login(LoginH5FE.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">loginH5.LoginH5FE#toClientSite</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://wltestmembersite.the777888.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

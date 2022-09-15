@@ -5,6 +5,7 @@ import java.net.URL;
 
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.SessionId;
 
 import io.appium.java_client.android.AndroidDriver;
 
@@ -19,7 +20,7 @@ public class BaseDriver {
 	URL URL;
 	DesiredCapabilities capabilities;
 	
-	public void setRealMobileDevice(String platformName, String platformVersion, String deviceName, String udid, String appPackage, String appActivity, String automationName) throws MalformedURLException {
+	public void setRealMobileDevice(String platformName, String platformVersion, String deviceName, String udid, String appPackage, String appActivity, String automationName, String pageLoadStrategy) throws MalformedURLException {
 		URL = new URL("http://localhost:5555/wd/hub");
 		capabilities = new DesiredCapabilities();
 		capabilities.setCapability("platformName", platformName);
@@ -29,10 +30,13 @@ public class BaseDriver {
 		capabilities.setCapability("appPackage", appPackage);
 		capabilities.setCapability("appActivity", appActivity);
 		capabilities.setCapability("automationName", automationName);
+		capabilities.setCapability("pageLoadStrategy", pageLoadStrategy);
 	}
 	
 	public void startDriver() {
 		driver = new AndroidDriver(URL, capabilities);
+		SessionId driverSessionID = driver.getSessionId();
+		System.out.println(driverSessionID);
 	}
 	
 	public void getURL(String url) {

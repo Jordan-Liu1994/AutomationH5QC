@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-14T18:05:21 SGT" name="Suite" finished-at="2022-09-14T18:05:38 SGT" duration-ms="17294">
+  <suite started-at="2022-09-15T16:31:18 SGT" name="Suite" finished-at="2022-09-15T16:31:50 SGT" duration-ms="31843">
     <groups>
+      <group name="LoginH5FE">
+        <method signature="LoginH5FE.login(java.lang.String)[pri:1, instance:loginH5.LoginH5FE@399f45b1]" name="login" class="loginH5.LoginH5FE"/>
+        <method signature="LoginH5FE.toClientSite(java.lang.String)[pri:0, instance:loginH5.LoginH5FE@399f45b1]" name="toClientSite" class="loginH5.LoginH5FE"/>
+      </group> <!-- LoginH5FE -->
     </groups>
-    <test started-at="2022-09-14T18:05:21 SGT" name="Test" finished-at="2022-09-14T18:05:38 SGT" duration-ms="17294">
-      <class name="loginH5.OpenChrome">
-        <test-method is-config="true" signature="startRealMobileDevice(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:loginH5.OpenChrome@4efcf8a]" started-at="2022-09-14T18:05:21 SGT" name="startRealMobileDevice" finished-at="2022-09-14T18:05:21 SGT" duration-ms="42" status="PASS">
+    <test started-at="2022-09-15T16:31:18 SGT" name="Test" finished-at="2022-09-15T16:31:50 SGT" duration-ms="31843">
+      <class name="loginH5.LoginH5FE">
+        <test-method is-config="true" signature="startRealMobileDevice(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:loginH5.LoginH5FE@399f45b1]" started-at="2022-09-15T16:31:18 SGT" name="startRealMobileDevice" finished-at="2022-09-15T16:31:19 SGT" duration-ms="280" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,14 +45,39 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[UiAutomator1]]>
+                <![CDATA[UiAutomator2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[normal]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[H5]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[17 JDK]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Jordan]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startRealMobileDevice -->
-        <test-method signature="toClientSite(java.lang.String)[pri:0, instance:loginH5.OpenChrome@4efcf8a]" started-at="2022-09-14T18:05:21 SGT" name="toClientSite" finished-at="2022-09-14T18:05:28 SGT" duration-ms="7167" status="PASS">
+        <test-method signature="toClientSite(java.lang.String)[pri:0, instance:loginH5.LoginH5FE@399f45b1]" started-at="2022-09-15T16:31:19 SGT" name="toClientSite" finished-at="2022-09-15T16:31:30 SGT" duration-ms="11636" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,15 +88,112 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toClientSite -->
-        <test-method signature="login()[pri:1, instance:loginH5.OpenChrome@4efcf8a]" started-at="2022-09-14T18:05:28 SGT" name="login" finished-at="2022-09-14T18:05:34 SGT" duration-ms="6054" status="PASS">
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:loginH5.LoginH5FE@399f45b1]" started-at="2022-09-15T16:31:30 SGT" name="logCaseStatus" finished-at="2022-09-15T16:31:30 SGT" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=toClientSite status=SUCCESS method=LoginH5FE.toClientSite(java.lang.String)[pri:0, instance:loginH5.LoginH5FE@399f45b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logCaseStatus -->
+        <test-method signature="login(java.lang.String)[pri:1, instance:loginH5.LoginH5FE@399f45b1]" started-at="2022-09-15T16:31:30 SGT" name="login" finished-at="2022-09-15T16:31:48 SGT" duration-ms="18195" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qctestergame001]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'CDWILT004', ip: '192.168.88.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e5ffcf92-b999-4e5b-bfc1-bb106f0d551b, findElement {using=xpath, value=//android.widget.EditText[@resource-id='username']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: UiAutomator2, deviceName: vivo Y7s, pageLoadStrategy: normal, platformName: android, platformVersion: 9, udid: DQSCRWA6JZY9UWNV}, appium:deviceApiLevel: 28, appium:deviceManufacturer: vivo, appium:deviceModel: V1913A, appium:deviceName: DQSCRWA6JZY9UWNV, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: DQSCRWA6JZY9UWNV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 9, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:udid: DQSCRWA6JZY9UWNV, appium:viewportRect: {height: 2057, left: 0, top: 84, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, pageLoadStrategy: normal, platformName: ANDROID}
+Session ID: e5ffcf92-b999-4e5b-bfc1-bb106f0d551b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'CDWILT004', ip: '192.168.88.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e5ffcf92-b999-4e5b-bfc1-bb106f0d551b, findElement {using=xpath, value=//android.widget.EditText[@resource-id='username']}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: UiAutomator2, deviceName: vivo Y7s, pageLoadStrategy: normal, platformName: android, platformVersion: 9, udid: DQSCRWA6JZY9UWNV}, appium:deviceApiLevel: 28, appium:deviceManufacturer: vivo, appium:deviceModel: V1913A, appium:deviceName: DQSCRWA6JZY9UWNV, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: DQSCRWA6JZY9UWNV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 9, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:udid: DQSCRWA6JZY9UWNV, appium:viewportRect: {height: 2057, left: 0, top: 84, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, pageLoadStrategy: normal, platformName: ANDROID}
+Session ID: e5ffcf92-b999-4e5b-bfc1-bb106f0d551b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at fuctionsH5FE.LoginFE.loginUsername(LoginFE.java:31)
+at loginH5.LoginH5FE.login(LoginH5FE.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:loginH5.OpenChrome@4efcf8a]" started-at="2022-09-14T18:05:34 SGT" name="endTest" finished-at="2022-09-14T18:05:38 SGT" duration-ms="3978" status="PASS">
+        <test-method is-config="true" signature="logCaseStatus(org.testng.ITestResult)[pri:0, instance:loginH5.LoginH5FE@399f45b1]" started-at="2022-09-15T16:31:48 SGT" name="logCaseStatus" finished-at="2022-09-15T16:31:49 SGT" duration-ms="900" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=FAILURE method=LoginH5FE.login(java.lang.String)[pri:1, instance:loginH5.LoginH5FE@399f45b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logCaseStatus -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:loginH5.LoginH5FE@399f45b1]" started-at="2022-09-15T16:31:49 SGT" name="endTest" finished-at="2022-09-15T16:31:50 SGT" duration-ms="787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- loginH5.OpenChrome -->
+      </class> <!-- loginH5.LoginH5FE -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
